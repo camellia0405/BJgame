@@ -100,7 +100,7 @@ const dealerResult = document.getElementById("dealer-result");
       pl2num = 11;
     }
 
-    //初期手札の合計点をresultに表示する
+    //初期手札の合計点をプレイヤー側だけresultに表示する
     result.textContent = pl1num + pl2num;
 
   })

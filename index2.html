@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>ブラックジャック</title>
+</head>
+<body>
+  <header>
+    <h1>ブラックジャック</h1>
+    <div class="text">
+      ブラックジャックは、21(twenty one)という名称でも知られており、世界から愛されるカードゲームです。
+      カジノディーラーとの駆け引きがあるため、自分なりに戦略を立てられるのがこのゲームの人気の秘訣。
+      ルールも覚えやすく、なんといってもブラックジャックの醍醐味は奥の深いゲーム性にあると言えるでしょう。
+    </div>
+  </header>
+  
+  <main>
+    <div class="rule_box">
+      <h2>◆ルール説明</h2>
+      <div class="text">
+        <p>2枚のカードが配られ、その合計がディーラーより21に近ければ勝ちというゲームです。</p>
+        <p>ただし、21を超えてしまうと負けになります。</p>
+        <p>2~9は、そのままの数字が点数となり、10・J・Q・Kは、「10点」</p>
+        <p>Aは、「1点」または「10点」のどちらかを選択できます。</p>
+        <p>※今回は、ダブルダウンやスプリットなどの特殊ルールはなしとします</p>
+      </div>
+    </div>
+    <h2>プレイ画面</h2>
+    <div class="play"><!-- ゲーム画面 -->
+
+      <div class="dealer"><!-- ディーラー -->
+        <p class="name">ディーラー</p>
+        <p id="dealer-result"></p>
+        <div id="dealer" class="stage">
+          <div id="d1" class="card-back"></div>
+          <div id="d2" class="card-front"></div>
+        </div>
+      </div>
+
+      <!-- <div class="startbtn">
+        <input type="button" value="スタート" id="start" class="startbtn-design">
+      </div> -->
+
+      <div class="player"><!-- プレイヤー -->
+        <p class="name">プレイヤー</p>
+        <p id="result"></p>
+        <div id="player" class="stage">
+          <div id="p1" class="card-front"></div>
+          <div id="p2" class="card-front"></div>
+        </div>
+      </div>
+
+      <div class="playbtn">
+        <input type="button" value="スタンド" id="stand" class="playbtn-design">
+        <input type="button" value="ヒット" id="hit" class="playbtn-design">
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
